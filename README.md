@@ -1,8 +1,7 @@
 # CIP-SCAN
-Common Industrial Protocol based device scanner over the intranet
-This program needs more refinement. The response packets are not displayed as it should in a refined manner.
+Common Industrial Protocol based device scanner over the intranet. 
 Use wireshark when running this script with the filter set to enip to view the response data for analysis
-Run using "python cipscan.py 127.0.0.0/24"
+Run using "python cipscan.py 192.168.1.0/24"
 A usual response packet will contain information like this
 
 Vendor ID: Rockwell Automation/Allen-Bradley (0x0001)
@@ -15,4 +14,3 @@ Product Name Length: XX
 Product Name: XXXX-LXXBXB B/XX.XX
 State: 0x00
 
-In addition to this the private IP addresses of the system will also be included like 192.168.0.17
